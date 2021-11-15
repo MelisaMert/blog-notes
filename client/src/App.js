@@ -16,7 +16,8 @@ import {BrowserRouter as Router, Switch, Routes, Route,Redirect} from 'react-rou
 import PenIcon from "@material-ui/icons/Create"
 import AddPostForm from '../src/components/AddPostForm';
 import PostDetails from '../src/components/PostDetails';
-import {fetchPosts} from '../src/actions/post'
+import {fetchPosts} from '../src/actions/post';
+import Footer from '../src/components/Footer';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -90,7 +91,7 @@ const App = () => {
             </Grid>
           </Grid>
        </Container>
-
+       <Footer />
        <AddPostForm open={open} handleClose={handleClose} />
      </>
   )
